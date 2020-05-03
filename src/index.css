@@ -1,0 +1,40 @@
+.__mouse__position {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.__mouse__position .__mouse__status {
+	position: absolute;
+	top: -40px;
+	right: 0;
+	padding: 0 6px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	animation: fade ease-in 0.2s;
+}
+.__mouse__position div {
+	display: inline-block;
+	vertical-align: sub;
+}
+.__mouse__position .__mouse__status span {
+	display: inline-block;
+	margin-left: 2px;
+}
+
+@keyframes fade {
+	from {
+		top: 0;
+		opacity: 0;
+	}
+	to {
+		top: -40px;
+		opacity: 1;
+	}
+}
