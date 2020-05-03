@@ -18,7 +18,6 @@ export class MousePosition {
 				throw new TypeError('The expected value of duration is a numeric type')
 			}
 			this.options = Object.assign({}, this.options, options)
-			console.log(this.options)
 		}
 	}
 	onAdd (map) {
