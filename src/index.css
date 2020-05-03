@@ -7,6 +7,7 @@
 	border-radius: 4px;
 	font-size: 14px;
 	cursor: pointer;
+	display: none;
 }
 .__mouse__position .__mouse__status {
 	position: absolute;

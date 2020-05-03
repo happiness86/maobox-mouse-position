@@ -17,5 +17,5 @@ map.addControl(new MousePosition())
 
 parameter | description 
 ---|---
-accuracy (`Number`) | Latitude and longitude accuracy 
-duration (`Number`)| The time the pop-up window exists (ms)
+accuracy (`Number`) | Latitude and longitude accuracy. default 5
+duration (`Number`)| The time the pop-up window exists (ms).default 1500ms

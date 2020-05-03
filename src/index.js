@@ -18,6 +18,7 @@ export class MousePosition {
 				throw new TypeError('The expected value of duration is a numeric type')
 			}
 			this.options = Object.assign({}, this.options, options)
+			console.log(this.options)
 		}
 	}
 	onAdd (map) {
@@ -33,11 +34,12 @@ export class MousePosition {
 	_getLngLat () {
 		const _this = this
 		_this._map.on('click', function (e) {
-			debugger
 			if (_this.options.accuracy && typeof _this.options.accuracy === 'number') {
-				_this._lngLat.lng = e.lngLat.lng.toFixed(5) // 经度
-				_this._lngLat.lat = e.lngLat.lat.toFixed(5) // 纬度
-				_this._container.innerText = `经度：${e.lngLat.lng.toFixed(5)}    纬度：${e.lngLat.lat.toFixed(5)}`
+				const accu = _this.options.accuracy
+				_this._container.style.display = 'block'
+				_this._lngLat.lng = e.lngLat.lng.toFixed(accu) // 经度
+				_this._lngLat.lat = e.lngLat.lat.toFixed(accu) // 纬度
+				_this._container.innerText = `经度：${_this._lngLat.lng}    纬度：${_this._lngLat.lng}`
 				_this._copyLngLat()
 			} else {
 				throw new TypeError('The expected value of accuracy is a numeric type')
@@ -62,7 +64,7 @@ export class MousePosition {
 		input.select()
 		document.execCommand('copy')
 		document.body.removeChild(input)
-		this.copyTip() // copy成功回调函数
+		this.copyTip()
 	}
 
 	// copy成功提示
