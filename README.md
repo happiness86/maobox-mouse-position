@@ -6,7 +6,7 @@
 
 ## Setup
 ```javascript
-import { MousePosition } from 'mouse-position'
+import { MousePosition } from 'mapbox-mouse-position/dist/index.js'
 ```
 
 ## Usage

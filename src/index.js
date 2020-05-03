@@ -95,4 +95,3 @@ export class MousePosition {
 		this.timer = null
 	}
 }
-mapboxgl.MousePosition = MousePosition
