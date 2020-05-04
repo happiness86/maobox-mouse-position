@@ -1,4 +1,4 @@
-# mouse-position
+# mapbox-mouse-position
 > A mapbox plugin that can get the latitude and longitude of the map
 
 ## Install
@@ -6,7 +6,7 @@
 
 ## Setup
 ```javascript
-import { MousePosition } from 'mapbox-mouse-position/dist/index.js'
+import { MousePosition } from 'mapbox-mouse-position'
 ```
 
 ## Usage

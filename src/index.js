@@ -1,5 +1,5 @@
 import './index.css'
-export class MousePosition {
+export default class MousePosition {
 	// 默认配置
 	options = {
 		accuracy: 5, // 经纬度精度
@@ -38,7 +38,7 @@ export class MousePosition {
 				_this._container.style.display = 'block'
 				_this._lngLat.lng = e.lngLat.lng.toFixed(accu) // 经度
 				_this._lngLat.lat = e.lngLat.lat.toFixed(accu) // 纬度
-				_this._container.innerText = `经度：${_this._lngLat.lng}    纬度：${_this._lngLat.lng}`
+				_this._container.innerText = `经度：${_this._lngLat.lng}    纬度：${_this._lngLat.lat}`
 				_this._copyLngLat()
 			} else {
 				throw new TypeError('The expected value of accuracy is a numeric type')
