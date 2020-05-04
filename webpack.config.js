@@ -7,8 +7,10 @@ module.exports = {
 	output: {
 		filename: 'index.js',
 		path: path.resolve(__dirname, 'dist'),
-		library: 'mousePosition',
-		libraryTarget: 'umd'
+		library: 'MousePosition',
+		libraryTarget: 'umd',
+		libraryExport: 'default',
+		globalObject: 'this'
 	},
 	module: {
 		rules: [

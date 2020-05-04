@@ -1,6 +1,6 @@
 {
   "name": "mapbox-mouse-position",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "repository": "happiness86/mapbox-mouse-position",
   "main": "dist/index.js",
